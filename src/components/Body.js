@@ -1,83 +1,112 @@
-import ReactCountryFlag from "react-country-flag"
+import { useState } from 'react'
+import Drivers from './Drivers'
 
 function Body() {
+    const [winner, setWinner] = useState('');
+    const [second, setSecond] = useState('');
+    const [third, setThird] = useState('');
+
+    const onChange = (e) => {
+        setWinner(e.target.value);
+        console.log(winner);
+    };
+
+    const foo = () => { return false };
+
     return (
-    <section class="section" id="s-fullheight-100vh">
-        <div class="columns">
-            <div class="column is-half">
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Subject</label>
+   
+    <section className="section" id="s-fullheight-100vh">      <p>Winner: {winner} Second: {second} Third: {third}</p>
+        <div className="field is-horizontal">
+            <div className="field-label is-normal">
+                <label className="label">Username</label>
+            </div>
+            <div className="field-body">
+                <div className="field">
+                    <div className="control">
+                        <input className="input is-normal" style={{width: "40%"}} type="text" placeholder="Enter your user name"/>
                     </div>
-                    <div class="field-body">
-                        <div class="field">
-                          <div class="control">
-                            <input class="input is-normal" type="text" placeholder="e.g. Partnership opportunity"/>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">Podium finishers</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field is-narrow">
-                            <div class="control">
-                                <div class="select">
-                                    <select>
-                                        <option> 44. Lewis Hamilton 🇬🇧</option>
-                                        <option> 33. Max Verstappen 🇳🇱</option>
-                                        <option> 77. Valterri Bottas 🇫🇮</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="field is-narrow">
-                            <div class="control">
-                                <div class="select">
-                                    <select>
-                                        <option> 44. Lewis Hamilton 🇬🇧</option>
-                                        <option> 33. Max Verstappen 🇳🇱</option>
-                                        <option> 77. Valterri Bottas 🇫🇮</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="field is-narrow">
-                            <div class="control">
-                                <div class="select">
-                                    <select>
-                                        <option> 44. Lewis Hamilton 🇬🇧</option>
-                                        <option> 33. Max Verstappen 🇳🇱</option>
-                                        <option> 77. Valterri Bottas 🇫🇮</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field is-horizontal">
-                  <div class="field-label is-normal">
-                      <label class="label">Driver of the day</label>
-                  </div>
-                  <div class="field-body">
-                      <div class="field">
-                          <div class="control">
-                          <div class="select">
-                                    <select>
-                                        <option> 44. Lewis Hamilton 🇬🇧</option>
-                                        <option> 33. Max Verstappen 🇳🇱</option>
-                                        <option> 77. Valterri Bottas 🇫🇮</option>
-                                    </select>
-                                </div>
-                          </div>
-                      </div>
-                  </div>
                 </div>
             </div>
-            <div class="column">
-                <p>filler</p>
+        </div>
+
+        <div className="field is-horizontal">
+            <div className="field-label is-normal">
+                <label className="label">Race winner</label>
+            </div>
+            <div className="field-body">
+                <div className="field">
+                    <div className="control">
+                        <div className="select" onChange={ (e) => setWinner(e.target.value) }>
+                            <select>
+                                <Drivers selectedDriver={ winner }/>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {/* <div className="field is-horizontal">
+            <div className="field-label is-normal">
+                <label className="label">2nd place</label>
+            </div>
+            <div className="field-body">
+                <div className="field">
+                    <div className="control">
+                        <div className="select" onChange={ (e) => setSecond(e.target.value) }>
+                            <select>
+                                <Drivers/>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="field is-horizontal">
+            <div className="field-label is-normal">
+                <label className="label">3rd place</label>
+            </div>
+            <div className="field-body">
+                <div className="field">
+                    <div className="control">
+                        <div className="select" onChange={ (e) => setThird(e.target.value) }>
+                            <select>
+                                <Drivers/>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> */}
+        
+        {/* <div className="field is-horizontal">
+            <div className="field-label is-normal">
+                <label className="label">Driver of the day</label>
+            </div>
+            <div className="field-body">
+                <div className="field">
+                    <div className="control">
+                        <div className="select" onChange={ (e) => setThird(e.target.value) }>
+                            <select>
+                                <Drivers/>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> */}
+
+        <div className="field is-horizontal">
+            <div className="field-label"></div>
+            <div className="field-body">
+                <div className="field">
+                    <div className="control">
+                        <button className="button is-info">
+                            Submit predictions
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

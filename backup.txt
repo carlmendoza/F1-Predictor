@@ -1,0 +1,91 @@
+{/* <div classNameName="field is-horizontal">
+                    <div classNameName="field-label is-normal">
+                        <label classNameName="label">Podium finishers</label>
+                    </div>
+                    <div classNameName="field-body">
+                        <div classNameName="field is-narrow">
+                            <div classNameName="control">
+                                <div classNameName="select">
+                                    <select>
+                                        <option>44. Lewis Hamilton 🇬🇧</option>
+                                        <option>33. Max Verstappen 🇳🇱</option>
+                                        <option>77. Valterri Bottas 🇫🇮</option>
+                                        <option>5. Sergio Perez 🇲🇽</option>
+                                        <option>4. Lando Norris 🇬🇧</option>
+                                        <option>3. Daniel Ricciardo 🇦🇺</option>
+                                        <option>55. Carlos Sainz 🇪🇸</option>
+                                        <option>16. Charles Leclerc 🇲🇨</option>
+                                        <option>14. Fernando Alonso 🇪🇸</option>
+                                        <option>31. Esteban Ocon 🇫🇷</option>
+                                        <option>5. Sebastian Vettel 🇩🇪</option>
+                                        <option>18. Lance Stroll 🇨🇦</option>
+                                        <option>22. Yuki Tsunoda 🇯🇵</option>
+                                        <option>10. Pierre Gasly 🇫🇷</option>
+                                        <option>7. Kimi Raikkonen 🇫🇮</option>
+                                        <option>99. Antonio Giovanazzi 🇮🇹</option>
+                                        <option>63. George Russell 🇬🇧</option>
+                                        <option>6. Nicolas Latifi 🇨🇦</option>
+                                        <option>47. Mick Schumacher 🇩🇪</option>
+                                        <option>9. Nikita Mazepin 🇷🇺</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div classNameName="field is-narrow">
+                            <div classNameName="control">
+                                <div classNameName="select">
+                                    <select>
+                                    <option>44. Lewis Hamilton 🇬🇧</option>
+                                        <option>33. Max Verstappen 🇳🇱</option>
+                                        <option>77. Valterri Bottas 🇫🇮</option>
+                                        <option>5. Sergio Perez 🇲🇽</option>
+                                        <option>4. Lando Norris 🇬🇧</option>
+                                        <option>3. Daniel Ricciardo 🇦🇺</option>
+                                        <option>55. Carlos Sainz 🇪🇸</option>
+                                        <option>16. Charles Leclerc 🇲🇨</option>
+                                        <option>14. Fernando Alonso 🇪🇸</option>
+                                        <option>31. Esteban Ocon 🇫🇷</option>
+                                        <option>5. Sebastian Vettel 🇩🇪</option>
+                                        <option>18. Lance Stroll 🇨🇦</option>
+                                        <option>22. Yuki Tsunoda 🇯🇵</option>
+                                        <option>10. Pierre Gasly 🇫🇷</option>
+                                        <option>7. Kimi Raikkonen 🇫🇮</option>
+                                        <option>99. Antonio Giovanazzi 🇮🇹</option>
+                                        <option>63. George Russell 🇬🇧</option>
+                                        <option>6. Nicolas Latifi 🇨🇦</option>
+                                        <option>47. Mick Schumacher 🇩🇪</option>
+                                        <option>9. Nikita Mazepin 🇷🇺</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div classNameName="field is-narrow">
+                            <div classNameName="control">
+                                <div classNameName="select">
+                                    <select>
+                                        <option>44. Lewis Hamilton 🇬🇧</option>
+                                        <option>33. Max Verstappen 🇳🇱</option>
+                                        <option>77. Valterri Bottas 🇫🇮</option>
+                                        <option>5. Sergio Perez 🇲🇽</option>
+                                        <option>4. Lando Norris 🇬🇧</option>
+                                        <option>3. Daniel Ricciardo 🇦🇺</option>
+                                        <option>55. Carlos Sainz 🇪🇸</option>
+                                        <option>16. Charles Leclerc 🇲🇨</option>
+                                        <option>14. Fernando Alonso 🇪🇸</option>
+                                        <option>31. Esteban Ocon 🇫🇷</option>
+                                        <option>5. Sebastian Vettel 🇩🇪</option>
+                                        <option>18. Lance Stroll 🇨🇦</option>
+                                        <option>22. Yuki Tsunoda 🇯🇵</option>
+                                        <option>10. Pierre Gasly 🇫🇷</option>
+                                        <option>7. Kimi Raikkonen 🇫🇮</option>
+                                        <option>99. Antonio Giovanazzi 🇮🇹</option>
+                                        <option>63. George Russell 🇬🇧</option>
+                                        <option>6. Nicolas Latifi 🇨🇦</option>
+                                        <option>47. Mick Schumacher 🇩🇪</option>
+                                        <option>9. Nikita Mazepin 🇷🇺</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
