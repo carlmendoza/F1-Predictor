@@ -4,11 +4,12 @@ const predictorModel = require('../schema')
 const router = express.Router();
 
 router.post('/', async (request, response) => {
+    const { body } = request;
     const predictor = new predictorModel({
-        name: 'carl',
-        first: 'lewis',
-        second: 'max',
-        third: 'lando'
+        name: body.user,
+        first: body.first,
+        second: body.second,
+        third: body.third
     })
 
     try {

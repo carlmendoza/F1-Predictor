@@ -1,13 +1,27 @@
 import { useState } from 'react'
 import Drivers from './Drivers'
+import Confirmation from './Confirmation'
 import { useForm } from 'react-hook-form'
 
 function Body() {
     const { register, handleSubmit, errors } = useForm();
     const [podium, setPodium] = useState([]);
+    const [saveConfirm, setSaveConfirm] = useState(false);
 
     const onSubmit = data => {
         console.log(data);
+        fetch('http://localhost:8000/test', {
+            method: 'POST',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data)
+        }).then(() => {
+            console.log('prediction saved!');
+            setSaveConfirm(true);
+            console.log(saveConfirm);
+        })
+        .catch(err => {
+            console.log(err)
+        })
     }
     
     const addToPodium = (pos, name) => {
@@ -26,6 +40,7 @@ function Body() {
     return (
    
     <section className="section" id="s-fullheight-100vh">
+        <Confirmation trigger={saveConfirm} setTrigger={setSaveConfirm}/>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="field is-horizontal">
                 <div className="field-label is-normal">

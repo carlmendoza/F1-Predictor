@@ -1,9 +1,5 @@
 function Drivers(props) {
     // console.log('selected driver ' + props.selectedDriver)
-    let opts = {};
-
-    opts['disabled'] = 'disabled';
-
     return (
         <>
         <option>Select driver</option>
