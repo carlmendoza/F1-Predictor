@@ -35,8 +35,6 @@ function Body() {
         setPodium(newPodium);
     };
 
-    const foo = () => { return false };
-
     return (
    
     <section className="section" id="s-fullheight-100vh">
