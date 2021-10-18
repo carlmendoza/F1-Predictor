@@ -8,7 +8,7 @@ var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var savePredictionRouter = require('./routes/savePredictions');
-var usersRouter = require('./routes/users');
+var getRaceResultsRouter = require('./routes/getRaceResults');
 
 var app = express();
 
@@ -37,8 +37,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/test', savePredictionRouter);
-app.use('/users', usersRouter);
+app.use('/save-prediction', savePredictionRouter);
+app.use('/race-results', getRaceResultsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

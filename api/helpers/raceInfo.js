@@ -1,4 +1,5 @@
 const axios = require("axios").default;
+const xml2js = require('xml2js');
 
 const options = {
   method: 'GET',
@@ -17,12 +18,32 @@ const getSchedule = async () => {
     return response.data;
 }
 
-const getRaceResults = async () => {
-    const response = await axios.get('http://ergast.com/api/f1/2021/5/results');
+const getNextRace = async () => {
+  const response = await getRaceResults();
 
-    return response;
+  return Number(response.MRData.RaceTable[0].$.round);
 }
 
-module.exports = {getSchedule, getRaceResults};
+const ergastSchedule = async () => {
+  const response = await axios.get('http://ergast.com/api/f1/2021');
+
+  return response;
+}
+
+const getRaceResults = async () => {
+    let raceResults;
+    const response = await axios.get('http://ergast.com/api/f1/2021/last/results');
+    xml2js.parseString(response.data, function (err, result) {
+      raceResults = result;
+    })
+    return raceResults;
+}
+
+module.exports = {
+  getSchedule,
+  getNextRace, 
+  getRaceResults,
+  ergastSchedule
+};
 
 

@@ -10,7 +10,7 @@ function Body() {
 
     const onSubmit = data => {
         console.log(data);
-        fetch('http://localhost:8000/test', {
+        fetch('http://localhost:8000/save-prediction', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)

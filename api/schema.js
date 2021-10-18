@@ -17,6 +17,13 @@ const PredictorSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    points: {
+        type: Number
+    },
+    race: {
+        type: Number,
+        required: true,
+    }
   });
   
   const Predictor = mongoose.model("Predictor", PredictorSchema);
