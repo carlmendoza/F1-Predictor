@@ -6,7 +6,7 @@ function Confirmation(props) {
       <button class="delete" onClick={() => props.setTrigger(false)} aria-label="delete"></button>
     </div>
     <div class="message-body">
-      Prediction saved!
+      {props.label} saved
     </div>
   </article>
   ) : "";

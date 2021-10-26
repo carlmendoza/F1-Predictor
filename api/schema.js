@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 
 const PredictorSchema = new mongoose.Schema({
     name: {
-      type: String,
-      required: true,
+        type: String,
+        required: true,
     },
     first: {
         type: String,
@@ -24,8 +24,8 @@ const PredictorSchema = new mongoose.Schema({
         type: Number,
         required: true,
     }
-  });
-  
-  const Predictor = mongoose.model("Predictor", PredictorSchema);
-  
-  module.exports = Predictor;
+});
+
+const Predictor = mongoose.model("Predictor", PredictorSchema);
+
+module.exports = Predictor;
