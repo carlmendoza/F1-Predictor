@@ -4,6 +4,7 @@ import './App.scss';
 import Header from './components/Header'
 import Banner from './components/Banner.js'
 import Body from './components/Body.js'
+import JoinLeague from 'components/JoinLeague';
 import Sample from './components/Sample.js'
 import ProtectedRoute from 'ProtectedRoute';
 import Footer from './components/Footer.js'
@@ -18,9 +19,7 @@ function App() {
         <Header/>
         <Banner/>
         <Switch>
-          <Route path="/todo">
-            <div id="s-fullheight-100vh">STILL TO DO</div>
-          </Route>
+          <Route path="/join-league" component={JoinLeague}/>
           <ProtectedRoute exact path="/" component={Body} isAuth={isAuth} setAuth={setAuth} />
         </Switch>
         <Footer/>
