@@ -11,27 +11,27 @@ const calculateResults = async (podium) => {
 
   allRecords.map(async (record) => {
     let points = 0;
-    
+
     if (record._doc.first == podium[0].PermanentNumber[0]) {
-      points+=3;
+      points += 3;
     }
 
     if (record._doc.second == podium[1].PermanentNumber[0]) {
-      points+=2;
+      points += 2;
     }
 
     if (record._doc.third == podium[2].PermanentNumber[0]) {
-      points+=1;
+      points += 1;
     }
 
     record.points = points;
     await record.save();
   })
-  
+
   return allRecords;
 };
 
-router.get('/', async function(req, res, next) {
+router.get('/', async function (req, res, next) {
   const f1Schedule = await raceInfo.getSchedule();
 
   const raceResults = await raceInfo.getRaceResults();

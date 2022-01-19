@@ -1,9 +1,13 @@
-// @import "../sass/utilities/initial-variables";
-// @import "../sass/utilities/functions";
-// @import "../sass/utilities/derived-variables.sass";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 
+$fa-font-path: "./webfonts";
 $footer-color: true;
 $footer-background-color: #f14668;
+
+.login {
+  font-size: 2rem;
+  font-weight: bold;
+}
 
 .App {
   text-align: center;

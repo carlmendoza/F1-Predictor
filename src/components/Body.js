@@ -38,7 +38,7 @@ function Body() {
     return (
    
     <section className="section" id="s-fullheight-100vh">
-        <Confirmation trigger={saveConfirm} setTrigger={setSaveConfirm}/>
+        <Confirmation trigger={saveConfirm} setTrigger={setSaveConfirm} label="Prediction"/>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="field is-horizontal">
                 <div className="field-label is-normal">
