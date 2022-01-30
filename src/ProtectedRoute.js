@@ -1,7 +1,7 @@
 import { Route } from 'react-router-dom'
 import Login from './components/Login'
 
-function ProtectedRoute({ isAuth: isAuth, component: Component, setAuth: setAuth }) {
+function ProtectedRoute({ isAuth, component: Component, setAuth }) {
     console.log(isAuth);
     return (
         <Route

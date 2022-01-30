@@ -3,7 +3,7 @@ import { useState } from 'react'
 import Confirmation from './Confirmation'
 import ValidationMessage from './ValidationMessage';
 
-function Login({setAuth: setAuth}) {
+function Login({setAuth}) {
     const { register, handleSubmit } = useForm();
     const [saveConfirm, setSaveConfirm] = useState(false);
     const [errorObject, setErrorObject] = useState({});

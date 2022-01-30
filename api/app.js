@@ -10,6 +10,7 @@ var indexRouter = require('./routes/index');
 var savePredictionRouter = require('./routes/savePredictions');
 var getRaceResultsRouter = require('./routes/getRaceResults');
 var authRouter = require('./routes/auth');
+var createLeaguesRouter = require('./routes/createLeagues');
 
 var app = express();
 
@@ -42,6 +43,7 @@ app.use('/save-prediction', savePredictionRouter);
 app.use('/race-results', getRaceResultsRouter);
 app.use('/', authRouter);
 app.use('/create-user', authRouter);
+app.use('/', createLeaguesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

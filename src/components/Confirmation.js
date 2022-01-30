@@ -1,4 +1,5 @@
 function Confirmation(props) {
+  // todo refactor 'misc'
   return (props.trigger) ? (
   <article class="message">
     <div class="message-header">
@@ -6,7 +7,7 @@ function Confirmation(props) {
       <button class="delete" onClick={() => props.setTrigger(false)} aria-label="delete"></button>
     </div>
     <div class="message-body">
-      {props.label} saved
+      {props.label} saved. {props.misc} 
     </div>
   </article>
   ) : "";

@@ -5,8 +5,6 @@ const router = express.Router();
 
 router.post('/login', async (request, response) => {
     const { body } = request;
-    console.log('log in hit');
-
     const userAccount = await userModel.findOne({ email: body.login_email });
 
     if (!userAccount) {
@@ -24,7 +22,7 @@ router.post('/login', async (request, response) => {
     }
 });
 
-router.post('/create-user', async (request, response) => {
+router.post('/', async (request, response) => {
     const salt = await bcrypt.genSalt(10);
     const { body } = request;
 
@@ -43,8 +41,9 @@ router.post('/create-user', async (request, response) => {
             console.log(e);
             response.status(500).send(e);
         }
-
     }
+
+    // bug here!
     response.statusMessage = 'User already exists!';
     response.status(400).end();
 });
